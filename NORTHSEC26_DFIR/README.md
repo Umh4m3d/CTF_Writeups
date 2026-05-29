@@ -2,7 +2,7 @@
 
 This repository contains my DFIR/Forensics writeups from **NorthSec CTF 2026**, part of NorthSec, Northern Morocco's largest applied cybersecurity event.
 
-NorthSec 2026, themed **The Andalusian Cipher**, took place in Tangier, Morocco, with the main on-site event held from **May 22 to May 24, 2026**. The event brings together students, professionals, and cybersecurity enthusiasts through talks, workshops, and a 20-hour competitive CTF. NorthSec is a student-led initiative born from collaboration between two engineering schools of Universite Abdelmalek Essaadi, with the organizing clubs **CyberForce @ FSTT** and **Ensecrowd @ ENSA Tangier**.
+NorthSec 2026, themed **The Andalusian Cipher**, took place in Tangier, Morocco, with the main on-site event held from **May 22 to May 24, 2026**. The event brings together students, professionals, and cybersecurity enthusiasts through talks, workshops, and a 20-hour competitive CTF. NorthSec is a student-led initiative born from collaboration between two engineering schools of Universite Abdelmalek Essaadi, with the organizing clubs **@CyberForce (FSTT)** and **@Ensecrowd (ENSA Tangier)**.
 
 More information: [northsec.ma](https://northsec.ma/)
 
