@@ -1,0 +1,51 @@
+1. What IP address did the pentester identify as the attacker infrastructure?
+
+2. What archive delivered the malware?
+
+3. Which MITRE ATT&CK technique ID describes the execution mechanism?
+
+4. Hash of the malicious payload (MD5).
+
+5. Which MITRE ATT&CK technique ID describes the persistence mechanism?
+
+6. What C2 framework was present on the attacker infrastructure?
+
+7. What is the SHA256 hash of the attacker’s Covenant listener profile?
+
+8. How many open TCP ports did the pentester’s scan find on the attacker machine and what are they? (answer:number of ports,port,port,port in ascending order)
+
+9. What CVE did the pentester use against the attacker infrastructure?
+
+10. What publicly available exploit did the pentester use to abuse the aforementioned CVE?
+
+11. What post-exploitation framework did the pentester use after compromising the attacker desktop?
+
+12. What coordinates identify the attacker’s operating location?
+
+13. What was the attacker’s most recent code-hosting repository?
+
+14. What session cookie gave access to the attacker’s code-hosting account?
+
+You need to understand all the attack and pentesting processes to get the correct answers. Here's some answers that i submitted:
+Solved answers so far:
+
+- Q1 attacker infrastructure IP: earlier guessed 10.34.0.84 but it was incorrect.
+- Archive delivered malware: ShadowCircuit_Setup.zip
+- MITRE ATT&CK execution mechanism: My guess T1204.002 was incorrect.
+- Malicious payload MD5: Correct starts with 22a, answer: 22a8a452b8e97546843614868a0d87b6
+- Payload is sc_updater.exe / SC_UPD~1.EXE.
+- Persistence mechanism: Unsolved
+- C2 framework present on attacker infrastructure: Skipped, but later Covenant was confirmed by Covenant artifacts.
+- SHA256 hash of Covenant listener profile: Unsolved
+- Open TCP ports from pentester scan: 3,22,80,7443
+- CVE used against attacker infrastructure: CVE-2020-36911
+Evidence from Edge history included Covenant login pages and searches:
+https://nvd.nist.gov/vuln/detail/CVE-2020-36911
+https://198.51.100.80:7443/covenantuser/login
+https://198.51.100.122:7443/covenantuser/login
+https://192.168.122.80:7443/covenantuser/login
+- Publicly available exploit used: User said author expects the exploit link. Correct was found from CVE references / browser history. Likely answer: https://www.exploit-db.com/exploits/51141
+- Post-exploitation framework after compromising attacker desktop: tried Havoc and it was incorrect. Need continue investigation.
+- Coordinates: find a pic1.png and pic2.png, this last one has a BSSID and then search for its coordinates online and got 33.544910, -7.676091 but please recover the 2 pictures in high resolution because they were not clear
+- What session cookie gave access to the attacker’s code-hosting account? We extracted Chromium cookies; identified: gitea_incredible; recovered attacker account: khalid@nox.com, cracked Windows password; decrypted DPAPI masterkey; attempted Chromium AES recovery. But: Edge Local State was missing, Chromium AES state key unrecoverable, final cookie plaintext could not be extracted I submitted gitea_incredible and it was incorrect. The author give me a hint to search for firefox logs or something like that, he mentions localhost and 127.0.0.1
+- Code-hosting repository was unresolved, the findings are incorrect: https://github.com/0xMarcio/cve, https://github.com/sebr-dev/Havoc-C2-SSRF-to-RCE
