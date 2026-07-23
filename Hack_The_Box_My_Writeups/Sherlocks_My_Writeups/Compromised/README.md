@@ -52,7 +52,7 @@ All findings, commands, screenshots, and forensic methodology are documented in:
 
 ## 🔗 Challenge Link
 
-[Hack The Box — Compromised Sherlock](https://www.hackthebox.com/)
+[Hack The Box — Compromised Sherlock](https://app.hackthebox.com/sherlocks/Compromised)
 
 ---
 
@@ -60,9 +60,3 @@ All findings, commands, screenshots, and forensic methodology are documented in:
 
 ![Solved](solved.png)
 
----
-
-## 👤 Author
-
-**DFIR Analyst**  
-*SOC — Network Forensics & Malware Analysis*
